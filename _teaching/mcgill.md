@@ -2,9 +2,9 @@
 title: "McGill University"
 collection: teaching
 type: "Instructor"
-# permalink: /teaching/2015-spring-teaching-1
+permalink: /teaching/mcgill
 venue: "School of Information Studies"
-# date: 2025-09-01
+date: 
 location: "Montreal, Canada"
 ---
 
