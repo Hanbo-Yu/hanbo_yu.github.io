@@ -1,9 +1,10 @@
 ---
-title: "[Award Name]"
+title: "Dean's Honour List"
 collection: services
 category: award
-venue: "[Institution/Conference]"
+venue: "Queen's University"
+year: "2022"
 order: 2
 ---
 
-Describe the award details here, for example: received for outstanding research contributions.
+Recognize students with a 3.5+ GPA across all courses taken for the academic year.

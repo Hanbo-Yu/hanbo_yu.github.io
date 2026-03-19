@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item{% if post.collection == 'publications' %} archive__item--publication{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -48,12 +48,15 @@
           {% endif %}
         {% elsif post.collection == 'publications' %}
           {% assign publication_status = post.publication_status | default: post.pub_status %}
+          {% assign publication_status_downcase = publication_status | downcase %}
           {% if publication_status %}
           <p><strong>Status:</strong> {{ publication_status }}</p>
           {% elsif post.date %}
           <p><strong>Status:</strong> Published</p>
+          {% assign publication_status_downcase = "published" %}
           {% else %}
           <p><strong>Status:</strong> Under review</p>
+          {% assign publication_status_downcase = "under review" %}
           {% endif %}
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
@@ -105,7 +108,7 @@
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
 
-    {% if post.collection == 'publications' %}
+    {% if post.collection == 'publications' and publication_status_downcase == 'published' %}
       <p>In <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
       {% if post.paperurl and post.slidesurl and post.bibtexurl %}
       <p><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>

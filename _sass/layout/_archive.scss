@@ -105,6 +105,26 @@
   }
 }
 
+.archive__item--publication {
+  margin-bottom: 0.8em;
+  font-size: $type-size-6;
+
+  .archive__item-title {
+    font-size: 1.22em;
+    font-weight: 600;
+    margin-bottom: 0.15em;
+  }
+
+  p {
+    margin-top: 0.15em;
+    margin-bottom: 0.45em;
+  }
+
+  .archive__item-excerpt {
+    margin-bottom: 0.35em;
+  }
+}
+
 
 /*
    List view
