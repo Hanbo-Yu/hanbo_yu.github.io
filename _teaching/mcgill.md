@@ -4,7 +4,7 @@ collection: teaching
 type: "Instructor"
 permalink: /teaching/mcgill
 venue: "School of Information Studies"
-date: 
+date: ""
 location: "Montreal, Canada"
 ---
 

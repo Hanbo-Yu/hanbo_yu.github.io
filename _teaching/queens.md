@@ -4,7 +4,7 @@ collection: teaching
 type: "Teaching Assistant"
 permalink: /teaching/queens
 venue: "School of Computing"
-date: 
+date: ""
 location: "Kingston, Canada"
 ---
 
