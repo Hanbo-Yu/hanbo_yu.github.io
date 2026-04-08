@@ -5,6 +5,7 @@ category: manuscripts
 publication_status: Published
 permalink: /publication/pulseanomaly
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+order:2
 date: 2024-01-01
 venue: 'IEEE Transactions on Dependable and Secure Computing (TDSC)'
 # slidesurl: 'https://academicpages.github.io/files/slides1.pdf'

@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Conference Papers"
+permalink: /publications/conference/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign conference_posts = site.publications | where: "category", "conferences" %}
+{% assign conference_posts_with_order = conference_posts | where_exp: "item", "item.order" | sort: "order" %}
+{% assign conference_posts_without_order = conference_posts | where_exp: "item", "item.order == nil" | sort: "date" | reverse %}
+{% assign conference_post_list = conference_posts_with_order | concat: conference_posts_without_order %}
+
+{% for post in conference_post_list %}
+  {% include archive-single.html %}
+{% endfor %}

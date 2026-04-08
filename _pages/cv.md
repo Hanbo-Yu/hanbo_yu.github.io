@@ -9,6 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
+{% assign journal_posts = site.publications | where: "category", "manuscripts" %}
+{% assign journal_posts_with_order = journal_posts | where_exp: "item", "item.order" | sort: "order" %}
+{% assign journal_posts_without_order = journal_posts | where_exp: "item", "item.order == nil" | sort: "date" | reverse %}
+{% assign journal_post_list = journal_posts_with_order | concat: journal_posts_without_order %}
+
+{% assign conference_posts = site.publications | where: "category", "conferences" %}
+{% assign conference_posts_with_order = conference_posts | where_exp: "item", "item.order" | sort: "order" %}
+{% assign conference_posts_without_order = conference_posts | where_exp: "item", "item.order == nil" | sort: "date" | reverse %}
+{% assign conference_post_list = conference_posts_with_order | concat: conference_posts_without_order %}
+
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
@@ -43,7 +53,15 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
+Journal Articles
+------
+  <ul>{% for post in journal_post_list %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+Conference Papers
+------
+  <ul>{% for post in conference_post_list %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   

@@ -2,8 +2,9 @@
 title: "ProvSpider: A Robust and Universal Toolkit for Binary Provenance Analysis Using Deep Learning"
 collection: publications
 category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
+permalink: /publication/provspider
+excerpt: 'This paper is about a system toolkit'
+order:1
 date: 2025-10-07
 venue: '23rd International Symposium on Network Computing and Applications <strong>(NCA)</strong>'
 paperurl: 'https://doi.org/10.1109/NCA67271.2025.00028'

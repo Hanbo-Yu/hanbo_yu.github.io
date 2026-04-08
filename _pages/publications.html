@@ -11,23 +11,31 @@ author_profile: true
 
 {% include base_path %}
 
+<p>
+  Browse by category:
+  <a href="{{ base_path }}/publications/journal/">Journal</a> |
+  <a href="{{ base_path }}/publications/conference/">Conference</a>
+</p>
+
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
+    {% assign category_posts = site.publications | where: "category", category[0] %}
+    {% assign category_posts_with_order = category_posts | where_exp: "item", "item.order" | sort: "order" %}
+    {% assign category_posts_without_order = category_posts | where_exp: "item", "item.order == nil" | sort: "date" | reverse %}
+    {% assign category_post_list = category_posts_with_order | concat: category_posts_without_order %}
+    {% if category_post_list.size > 0 %}
+      <h2>{{ category[1].title }}</h2><hr />
+    {% endif %}
+    {% for post in category_post_list %}
       {% include archive-single.html %}
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
+  {% assign publications_with_order = site.publications | where_exp: "item", "item.order" | sort: "order" %}
+  {% assign publications_without_order = site.publications | where_exp: "item", "item.order == nil" | sort: "date" | reverse %}
+  {% assign publication_list = publications_with_order | concat: publications_without_order %}
+  {% for post in publication_list %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
