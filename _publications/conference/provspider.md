@@ -2,7 +2,7 @@
 title: "ProvSpider: A Robust and Universal Toolkit for Binary Provenance Analysis Using Deep Learning"
 collection: publications
 category: conferences
-permalink: /publication/provspider
+permalink: /publication/conference/provspider
 excerpt: 'This paper is about a system toolkit'
 order: 1
 date: 2025-10-07

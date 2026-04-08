@@ -3,7 +3,7 @@ title: "TDRLM: Stylometric learning for authorship verification by Topic-Debiasi
 collection: publications
 category: manuscripts
 publication_status: Published
-permalink: /publication/tdrlm
+permalink: /publication/journal/tdrlm
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 order: 4
 date: 2023-03-01

@@ -3,7 +3,7 @@ title: "A<sup>2</sup>Gen: A Framework for Reproducible Generation and Analysis o
 collection: publications
 category: manuscripts
 publication_status: Under review
-permalink: /publication/a2gen
+permalink: /publication/journal/a2gen
 order: 5
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 date: 2026-03-01

@@ -2,7 +2,7 @@
 title: "TALME: Topical Adversarial LLM-based Misinformation Enforcer"
 collection: publications
 category: conferences
-permalink: /publication/talme
+permalink: /publication/conference/talme
 excerpt: 'This paper is about humor detection'
 order: 2
 date: 2025-10-09

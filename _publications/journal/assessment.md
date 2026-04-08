@@ -3,7 +3,7 @@ title: "Security Risk Assessment of Android Automotive OS Software Supply Chain 
 collection: publications
 category: manuscripts
 publication_status: Published
-permalink: /publication/assessment
+permalink: /publication/journal/assessment
 excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 order: 1
 date: 2026-04-01

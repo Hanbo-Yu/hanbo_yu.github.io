@@ -3,7 +3,7 @@ title: "Securing Automotive Data Flow: A Survey of Telematics Security Across In
 collection: publications
 category: manuscripts
 publication_status: Published
-permalink: /publication/vehicular
+permalink: /publication/journal/vehicular
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 order: 3
 date: 2026-02-01

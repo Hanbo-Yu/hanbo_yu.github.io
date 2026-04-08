@@ -2,7 +2,7 @@
 title: "Integrating AI and Social Responsibility in Portfolio Optimization: A Study with Evolutionary Algorithms"
 collection: publications
 category: conferences
-permalink: /publication/safertea
+permalink: /publication/conference/safertea
 excerpt: 'This paper is about a genetic algorithm in portfolio management'
 order: 3
 date: 2024-02-17
