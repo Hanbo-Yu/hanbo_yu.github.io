@@ -9,5 +9,5 @@ order: 4
 date: 2026-04-07
 venue: '37th IEEE International Symposium on Software Reliability Engineering <strong>(ISSRE)</strong>'
 # paperurl: 'https://doi.org/10.1109/NCA67271.2025.00028'
-citation: 'Z. Fu, <strong>H. Yu</strong>, X. Hu, S. H. H. Ding, F. Alaca, P. Charland'
+citation: '<strong>H. Yu</strong>, X. Hu, Z. Fu, S. H. H. Ding'
 ---    
