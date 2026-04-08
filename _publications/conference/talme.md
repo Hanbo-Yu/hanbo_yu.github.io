@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/talme
 excerpt: 'This paper is about humor detection'
-order:2
+order: 2
 date: 2025-10-09
 venue: '9th International Conference on Advances in Artificial Intelligence <strong>(ICAAI)</strong>'
 paperurl: 'https://icaai.org/download/program.pdf'

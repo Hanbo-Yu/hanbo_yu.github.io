@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/provspider
 excerpt: 'This paper is about a system toolkit'
-order:1
+order: 1
 date: 2025-10-07
 venue: '23rd International Symposium on Network Computing and Applications <strong>(NCA)</strong>'
 paperurl: 'https://doi.org/10.1109/NCA67271.2025.00028'

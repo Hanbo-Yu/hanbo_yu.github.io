@@ -11,12 +11,6 @@ author_profile: true
 
 {% include base_path %}
 
-<p>
-  Browse by category:
-  <a href="{{ base_path }}/publications/journal/">Journal</a> |
-  <a href="{{ base_path }}/publications/conference/">Conference</a>
-</p>
-
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
